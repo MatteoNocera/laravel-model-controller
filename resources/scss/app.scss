@@ -1,5 +1,9 @@
 @import '~bootstrap/scss/bootstrap';
 
+main {
+    min-height: 70vh;
+}
+
 footer {
     a {
         text-decoration: none;

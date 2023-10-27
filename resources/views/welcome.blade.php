@@ -1,38 +1,23 @@
 @extends('layouts.app')
 
-@section('page-title', 'Movie')
+@section('page-title', 'Home Page')
 
 @section('content')
 
     <div class="container">
 
-        <h1 class="py-4">Movies</h1>
+        <h1 class="py-4">Welcome to the Best Movies Site</h1>
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 py-4">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae unde, delectus id officiis perferendis
+            dicta
+            quibusdam voluptatibus et qui voluptas voluptates eos aut vero, saepe tempore! Nemo esse nisi earum!
+        </p>
 
-            @forelse ($movies as $movie)
-                <div class="col px-3">
+        <button class="btn btn-dark">
+            <a class="text-white text-decoration-none" href="{{ route('movies') }}">See our Movies</a>
+        </button>
 
 
-                    <div class="card text-bg-dark">
-                        <img src="https://picsum.photos/400/400?random={{ $movie['id'] }}" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h3 class="card-title ">Title: {{ $movie['title'] }}</h3>
-                            <h5 class="">Original Title: {{ $movie['original_title'] }}</h5>
-                            <p class="card-text ">Nationality: Title: {{ $movie['nationality'] }}</p>
-                            <p class="card-text "><small>Date: Title: {{ $movie['date'] }}</small></p>
-
-                        </div>
-
-                    </div>
-                </div>
-
-            @empty
-
-                <div class="col">
-                    <h3>No film</h3>
-                </div>
-            @endforelse
-        </div>
     </div>
 @endsection
