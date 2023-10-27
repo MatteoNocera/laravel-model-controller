@@ -1,1 +1,12 @@
 @import '~bootstrap/scss/bootstrap';
+
+footer {
+    a {
+        text-decoration: none;
+        color: gray;
+    }
+}
+
+.card-img-overlay {
+    background-color: rgb(0 0 0 / 43%);
+}
