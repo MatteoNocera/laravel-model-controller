@@ -19,8 +19,9 @@
                         <div class="card-img-overlay">
                             <h3 class="card-title ">Title: {{ $movie['title'] }}</h3>
                             <h5 class="">Original Title: {{ $movie['original_title'] }}</h5>
-                            <p class="card-text ">Nationality: Title: {{ $movie['nationality'] }}</p>
-                            <p class="card-text "><small>Date: Title: {{ $movie['date'] }}</small></p>
+                            <p class="card-text ">Nationality: {{ $movie['nationality'] }}</p>
+                            <p class="card-text "><small>Date: {{ $movie['date'] }}</small></p>
+                            <h2 class="card-title ">Rating: {{ $movie['vote'] }}</h2>
 
                         </div>
 
