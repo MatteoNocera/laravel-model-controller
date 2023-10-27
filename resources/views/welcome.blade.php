@@ -19,6 +19,11 @@
 
     <main class="bg-light">
 
+        @forelse ($movies as $movie)
+            <p>{{ $movie['title'] }}</p>
+        @empty
+            <p>No film</p>
+        @endforelse
     </main>
 
 </body>
